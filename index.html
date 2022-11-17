@@ -29,7 +29,8 @@ let ifrm = document.createElement('video');
  xhr.onload = (e) => {
  let blob = new Blob([xhr.response]);
  let url = URL.createObjectURL(blob);
-             ifrm.setAttribute("src", url);
+             ifrm.src = url;
+        alert('url'+ url);
 }
 xhr.send();
              ifrm.style.maxHeight = '70vh';
