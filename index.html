@@ -1,8 +1,7 @@
 
 <!Doctype html>
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4533038799674284"
-     crossorigin="anonymous"></script>
+    
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     body{
@@ -19,19 +18,23 @@
 <body oncontextmenu="return false">
     <video controls controlsList="nodownload"> <source src="https://firebasestorage.googleapis.com/v0/b/chat-9a308.appspot.com/o/Images%2F.mp4?alt=media&token=4b7dcbdb-6509-438c-881e-0e547993e7ee">
     </video>
-    <div id="ad"> 
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4533038799674284"
-     crossorigin="anonymous"></script>
-<!-- Ad -->
-<ins class="adsbygoogle"
-     style="display:block;"
-     data-ad-client="ca-pub-4533038799674284"
-     data-ad-slot="3382438436"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-        </div> 
+    <div id='app'></div>
 </body>
+<script>
+let ifrm = document.createElement('video');
+  ifrm.style.width = "100vw";
+ let xhr = new XMLHttpRequest();
+ xhr.open('GET', "https://firebasestorage.googleapis.com/v0/b/em-issyoo.appspot.com/o/Images%2F1668592284883?alt=media&token=21fb4390-cbe7-462f-9ee6-d4fac84d3c8f");
+ xhr.responseType = 'arraybuffer';
+ xhr.onload = (e) => {
+ let blob = new Blob([xhr.response]);
+ let url = URL.createObjectURL(blob);
+             ifrm.setAttribute("src", url);
+}
+xhr.send();
+             ifrm.style.maxHeight = '70vh';
+             ifrm.controls = true;
+             ifrm.controlsList="nodownload";
+             document.getElementById("app").appendChild(ifrm);
+</script>
 </html>
