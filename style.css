@@ -156,10 +156,10 @@ section {
   position: relative;
 }
 
-.controls .progress-area .progress-bar {
+.controls .progress-area .progress-bar{
   position: relative;
   width: 0%;
-  background: rgb(255, 174, 0);
+  background: rgb(255, 17, 0);
   height: inherit;
   border-radius: inherit;
   cursor: pointer;
