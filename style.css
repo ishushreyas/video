@@ -159,7 +159,7 @@ section {
 .controls .progress-area .progress-bar{
   position: relative;
   width: 0%;
-  background: rgb(255, 17, 0);
+  background: rgb(55, 170, 0);
   height: inherit;
   border-radius: inherit;
   cursor: pointer;
@@ -174,7 +174,7 @@ section {
   right: -5px;
   top: 50%;
   transform: translateY(-50%);
-  background: rgb(255, 174, 0);
+  background: rgb(55, 174, 0);
 }
 
 .controls .progress-area .bufferedBar{
